@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async="true" src="script.js"></script>
+</head>
+<body>
+<form>
+    <textarea id="textArea" cols="100" rows="10" onfocus="showTable();" onblur="showTable();">Повар спрашивает повара:
+        - Какова твоя профессия? Ты милиционер?
+        - Нееет! - отвечает повар, - моя главная профессия - повар! А твоя, наверное, врач?
+        - Нееет! Я повар!
+      </textarea>
+      <br>
+    <button action="#">Посчитать слова</button>
+
+  
+</form>  <div id="table"></div>
+    
+</body>
+</html>
+
+
+
+<script>
+/*
+Тянем текст из поля
+*/
+
+let source = document.getElementById('textArea').value;
+
+
+let tableDiv = document.getElementById('table'), 
+text='tra-la-la1';
+//source=text;
+
+
+function showTable() {
+    table.innerHTML = source;
+
+}
+
+</script>
+
